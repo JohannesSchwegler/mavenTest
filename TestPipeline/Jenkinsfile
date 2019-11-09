@@ -1,11 +1,8 @@
-pipeline { 
-    agent any  
-    stages { 
-        stage('SCM Checkout') { 
-            steps { 
-               echo 'This is a minimal pipeline.' 
-               git 'https://github.com/JohannesSchwegler/mavenTest'
-            }
-        }
-    }
+node{
+    stage('SCM Checkout'){
+    git 'https://github.com/JohannesSchwegler/mavenTest'
+    }   
+  
+    
 }
+    
