@@ -3,9 +3,7 @@ pipeline{
     agent any
     
     stages{
-    stage('SCM Checkout'){
-    git 'https://github.com/JohannesSchwegler/mavenTest'
-    }   
+ 
     stage('Compile-Package'){
         steps{
         withMaven(maven:'Maven_3_6_2'){
