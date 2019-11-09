@@ -1,4 +1,8 @@
-node{
+pipeline{
+    
+    agent any
+    
+    stages{
     stage('SCM Checkout'){
     git 'https://github.com/JohannesSchwegler/mavenTest'
     }   
@@ -19,5 +23,5 @@ node{
  
     }
     }
-    
+    }
 }
